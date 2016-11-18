@@ -26,32 +26,32 @@ public class MobileFlare : MonoBehaviour
     #region Flare Properties
 
     [Range (0.1f, 1f)]
-    public float threshold;
+    public float threshold = 0.8f;
 
     [Range (0.1f, 10f)]
-    public float intensity;
+    public float intensity = 5f;
 
     [Range (1, 5)]
-    public int ghostNum;
+    public int ghostNum = 3;
 
     [Range (0.01f, 0.8f)]
-    public float ghostDispersal;
+    public float ghostDispersal = 0.23f;
 
     [Range (0.01f, 1f)]
-    public float haloWidth;
+    public float haloWidth = 0.41f;
 
-    public Vector4 colorDistortion;
+    public Vector4 colorDistortion = new Vector4 (0.01f, 0.02f, 0.015f);
 
     public Texture2D gradient;
 
     [Range(0, 5)]
-    public int downSampleNum;
+    public int downSampleNum = 1;
 
     [Range (0.1f, 20f)]
-    public float blurSpreadSize;
+    public float blurSpreadSize = 5f;
 
     [Range (1, 10)]
-    public int blurIterations;
+    public int blurIterations = 2;
 
     #endregion
 
